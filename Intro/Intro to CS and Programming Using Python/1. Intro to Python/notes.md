@@ -144,3 +144,54 @@
 - anything computable in one language is computable in any other programming language (Turing Complete property)
 
 ---
+
+## Creating Recipes
+
+- a programming language provides a set of primitive **operations**
+- **expressions** are complex but legal combinations of primitives in a programming language
+- expressions and computations have **values** and meanings in a programming language
+
+## Aspects of Languages
+
+- **primitive constructs**
+
+  - English: words
+  - programming language: numbers, strings, simple operators
+
+- **syntax**
+
+  - (determines whether a string is legal)
+  - English:
+    - "cat dog boy" -> not syntactically valid
+    - "cat hugs boy" -> syntactically valid
+  - programming language:
+    - `"hi"5` -> not syntactically valid
+    - `3.2\*5` -> syntactically valid
+
+- **static semantics** is which syntactically valid strings have meaning
+
+  - (determines whether a string has meaning)
+  - English:
+    - "I are hungry" -> syntactically valid but static semantic error programming language:
+    - `3.2*5` -> syntactically valid
+    - `3+"hi"` -> static semantic error
+
+- **semantics** is the meaning associated with syntactically correct string of symbols with no static semantic errors
+
+  - (assigns a meaning to a legal sentence)
+  - English: can have many meanings --
+    - "Flying planes can be dangerous"
+    - "This reading lamp hasn't uttered a word since I bought it?"
+  - programming languages: have only one meaning but may not be what programmer intended
+
+## Where things go wrong
+
+- **syntactic errors**
+  - common and easily caught
+- **static semantic errors**
+  - some languages check for these before running program
+  - can cause unpredictable behavior
+- no semantic errors but **different meaning than what programmer intended**
+  - program crashes, stops running
+  - program runs forever
+  - program gives an answer but different than expected
