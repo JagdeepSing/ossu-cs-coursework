@@ -39,13 +39,15 @@
 - no 'OUT' because no value returned, just something printed
 - `print(...)`
 
+---
+
 ## Expressions
 
 - combine objects and operators to form expressions
 - an expression has a value, which has a type
 - syntax for a simple expression `<object> <operator> <object>`
 
-## Operators on ints and floats
+## Operators on `ints` and `floats`
 
 - `i+j` -> the **sum** (if both ints, result is int. if either or both are floats, result is float)
 - `i-j` -> the **difference** (if both ints, result is int. if either or both are floats, result is float)
@@ -65,3 +67,70 @@
   - /
   - - and -
   - executed left to right, as appear in expression
+
+---
+
+## Variables and Values
+
+- equal sign is an **assignment** of a value to a variable name
+
+  `pi = 3.14159`
+
+  `pi_approx = 22/7`
+
+  - value stored in computer memory
+  - an assignment binds name to value
+  - retrieve value associated with name or variable by invoking the name, by typing `pi`
+
+## Abstracting Expressions
+
+- why **give names** to values of expressions?
+- **reuse names** instead of values
+- easier to change code later
+
+  `pi = 3.14159`
+
+  `radius = 2.2`
+
+  `area = pi * (radius ** 2)`
+
+## Changing Bindings
+
+- can **re-bind** variable names using new assignment statements
+- Previous value may still be stored in memory but lost the handle for it
+- value for area does not change until you tell the computer to do the calculation again
+
+---
+
+## Comparison Operators on `int` and `float`
+
+- `i` and `j` are any variable names
+
+​ `i>j`
+
+​ `i>=j`
+
+​ `i<j`
+
+​ `i<=j`
+
+​ `i==j` -> **equality** test, `True` if `i` equals `j`
+
+​ `i!=j` -> **inequality** test, `True` if `i` not equal to `j`
+
+## Logic Operators on `bools`
+
+- a and b are any variable names
+
+  `not a` -> `True` if `a` is `False`, `False` if `a` is `True`
+
+  `a and b` -> `True` if both are `True`
+
+  `a or b` -> `True` if either or both are `True`
+
+## Branching Programs
+
+- the simplest branching statement is a **conditional**
+  - a test (expression that evaluates to `True` or `False`)
+  - a block of code to execute if the test is `True`
+  - an optional block of code to execute if the test is `False`
