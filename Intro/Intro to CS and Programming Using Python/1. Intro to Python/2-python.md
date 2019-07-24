@@ -37,7 +37,7 @@
 
 - to show output from code to a user, use `print` command
 - no 'OUT' because no value returned, just something printed
-- print(...)
+- `print(...)`
 
 ## Expressions
 
