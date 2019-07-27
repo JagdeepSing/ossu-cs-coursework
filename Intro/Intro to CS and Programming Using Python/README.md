@@ -1,4 +1,4 @@
-# Intro to Python
+# [Intro to Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-2)
 
 ## Professor: Eric Grimson, MIT
 
